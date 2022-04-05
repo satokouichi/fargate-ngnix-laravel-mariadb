@@ -9,7 +9,7 @@ on:
 env:
   AWS_REGION: ap-northeast-1
   IMAGE_TAG: ${{ github.sha }}
-  SYSTEM_NAME: template
+  SYSTEM_NAME: project
 
 jobs:
   deploy:
