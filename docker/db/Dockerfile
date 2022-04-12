@@ -1,6 +1,3 @@
-FROM mysql/mysql-server:8.0
-LABEL maintainer="ucan-lab <yes@u-can.pro>"
+FROM mariadb:10.4
 
-ENV TZ=UTC
-
-COPY ./docker/db/my.cnf /etc/my.cnf
+COPY ./init.sql /docker-entrypoint-initdb.d
