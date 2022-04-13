@@ -1,3 +1,1 @@
-CREATE USER dbuser;
-CREATE DATABASE laravel DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-GRANT ALL ON laravel.* TO 'dbuser'@'%' IDENTIFIED BY 'dbuserpassword';
+grant all privileges on laravel.* TO 'dbuser'@'127.0.0.1' identified by 'dbuserpassword';
